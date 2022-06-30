@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetTimeActivity">
+
+    <EditText
+        android:id="@+id/punctRidicare"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textSize="15sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="@+id/textView57"
+        app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="300dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins"
+        android:text="Completează câmpurile pentru a finisa rezervarea mijlocului de transport."
+        android:textColor="#838383"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Punct de ridicare"
+        android:textColor="#838383"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/textView56"
+        app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Timp rezervat"
+        android:textColor="#838383"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/punctRidicare"
+        app:layout_constraintTop_toBottomOf="@+id/punctRidicare" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_input"
+        android:entries="@array/time"
+        app:layout_constraintStart_toStartOf="@+id/textView59"
+        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="297dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#184A2C"
+        android:fontFamily="@font/poppins"
+        android:text="Continuă"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

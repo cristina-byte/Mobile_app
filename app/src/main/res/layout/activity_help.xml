@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+    tools:context=".SettingsActivity">
+
+
+        <TextView
+            android:id="@+id/textView74"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="3. Scaneaza QR-ul mijlocului de transport"
+            app:layout_constraintStart_toStartOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="2. Click pe butonul Rezervă"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:fontFamily="@font/poppins"
+            android:text="Despre aplicație"
+            android:textColor="#184A2C"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView18"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="323dp"
+            android:layout_height="213dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Aplicația EcoEgo este destinată pentru inchirierea transportului ecologic: biciclete și trotinete electrice cu scopul de a stimula folosirea alternativelor ecologice care nu poluează mediul inconjurător. Aplicația a fost proiectată pentru a putea fi folosită in orașul Timișoara."
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="Cum să inchiriezi un mijloc de transport?"
+            android:textColor="#184A2C"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="1. Alege un punct de ridicare"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/textView64"
+            app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="287dp"
+            android:layout_height="143dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/textView69"
+            app:layout_constraintTop_toBottomOf="@+id/textView69"
+            app:srcCompat="@drawable/poza1" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="291dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/textView70"
+            app:layout_constraintTop_toBottomOf="@+id/textView70"
+            app:srcCompat="@drawable/rezerva" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="283dp"
+            android:layout_height="149dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/textView74"
+            app:layout_constraintTop_toBottomOf="@+id/textView74"
+            app:srcCompat="@drawable/pozanoua" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="4. Realizează plata"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AddCardActivity">
+
+        >
+
+        <Button
+            android:id="@+id/setCard"
+            android:layout_width="282dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#184A2C"
+            android:fontFamily="@font/poppins"
+            android:text="Continuă"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            app:cornerRadius="6sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.573"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextName5" />
+
+        <EditText
+            android:id="@+id/editTextName5"
+            android:layout_width="282dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:paddingLeft="5dp"
+            android:hint="YYYY.MM.DD"
+            android:inputType="date"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView26"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/poppins"
+        android:text="Data expirare"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextName4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName4" />
+
+    <EditText
+        android:id="@+id/editTextName4"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/poppins"
+        android:text="CVV"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextName3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName3" />
+
+    <EditText
+        android:id="@+id/editTextName3"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/poppins"
+        android:text="Cod"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextName2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName2" />
+
+        <EditText
+            android:id="@+id/editTextName2"
+            android:layout_width="282dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Prenume Nume"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView23"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/poppins"
+        android:text="Nume detinator"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="271dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="Pentru a continua este necesar sa introduci datele cardului pentru plata calatoriilor"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Card"
+            android:textColor="#184A2C"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

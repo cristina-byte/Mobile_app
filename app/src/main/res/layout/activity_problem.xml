@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+        <Button
+            android:id="@+id/reportProblem"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#184A2C"
+            android:fontFamily="@font/poppins"
+            android:text="Raportează"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            app:cornerRadius="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/problemImage" />
+
+        <EditText
+            android:id="@+id/dataRaportare"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:paddingLeft="5dp"
+            android:inputType="datetime"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <EditText
+            android:id="@+id/descriereProblema"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:paddingLeft="5dp"
+            android:inputType="textPersonName"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:fontFamily="@font/poppins"
+            android:text="Tip problemă"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/tipProblema"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Descriere problemă"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/tipProblema"
+            app:layout_constraintTop_toBottomOf="@+id/tipProblema" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Data raportare"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/descriereProblema"
+            app:layout_constraintTop_toBottomOf="@+id/descriereProblema" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/poppins"
+            android:text="Lasă-ne detalii despre problema întâmpinată. Vom încerca să o rezolvăm cât mai prompt."
+            android:textColor="#838383"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/tipProblema"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/custom_input"
+            android:entries="@array/types"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <Button
+            android:id="@+id/addProblemImage"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Adaugă poză"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#474747"
+            android:textSize="15sp"
+            app:icon="@drawable/ic_baseline_photo_24"
+            app:iconTint="@color/green"
+            app:layout_constraintStart_toStartOf="@+id/dataRaportare"
+            app:layout_constraintTop_toBottomOf="@+id/dataRaportare" />
+
+        <ImageView
+            android:id="@+id/problemImage"
+            android:layout_width="52dp"
+            android:layout_height="33dp"
+            app:layout_constraintStart_toStartOf="@+id/addProblemImage"
+            app:layout_constraintTop_toBottomOf="@+id/addProblemImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

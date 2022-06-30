@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "382722968131",
+    "firebase_url": "https://ecogo-b8dec-default-rtdb.firebaseio.com",
+    "project_id": "ecogo-b8dec",
+    "storage_bucket": "ecogo-b8dec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382722968131:android:b1bd6650800f47ef3522f6",
+        "android_client_info": {
+          "package_name": "com.example.ecogo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382722968131-sv8rsmuki5t4kotof1nvqkmva18ucbim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtbZrZRibvwQzCBpzootrZhIqx1OXP4V8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382722968131-sv8rsmuki5t4kotof1nvqkmva18ucbim.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEEEE4"
+    android:backgroundTint="@color/white"
+    android:backgroundTintMode="add">
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:text="Setări"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#3A3A3A"
+        android:textSize="13sp"
+        android:typeface="normal"
+        app:cornerRadius="6px"
+        app:icon="@drawable/ic_baseline_settings_24"
+        app:iconTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/points" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:text="Deconectare"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#3A3A3A"
+        android:textSize="13sp"
+        android:typeface="normal"
+        app:cornerRadius="6px"
+        app:icon="@drawable/ic_baseline_keyboard_backspace_24"
+        app:iconTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings" />
+
+    <Button
+        android:id="@+id/points"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:text="Puncte de ridicare"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#3A3A3A"
+        android:textSize="13sp"
+        android:typeface="normal"
+        app:cornerRadius="6px"
+        app:icon="@drawable/ic_baseline_location_on_24"
+        app:iconTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/appbar"
+        android:layout_width="0dp"
+        android:layout_height="144dp"
+        android:background="#184A2C"
+        android:backgroundTint="#184A2C"
+        app:cornerRadius="60sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/numeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/cardView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/emailUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/cardView3"
+            app:layout_constraintTop_toBottomOf="@+id/numeUser" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/background_dialog" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Meniu"
+        android:textColor="#184A2C"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+    <Button
+        android:id="@+id/trips"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:text="Călătoriile mele"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#3A3A3A"
+        android:textSize="13sp"
+        android:typeface="normal"
+        app:cornerRadius="6px"
+        app:icon="@drawable/ic_baseline_history_24"
+        app:iconTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:text="Ajutor"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#3A3A3A"
+        android:textSize="13sp"
+        android:typeface="normal"
+        app:cornerRadius="6px"
+        app:icon="@drawable/ic_baseline_help_24"
+        app:iconPadding="8dp"
+        app:iconTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trips" />
+
+    <Button
+        android:id="@+id/report"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:text="Raportează o problemă"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#3A3A3A"
+        android:textSize="13sp"
+        android:typeface="normal"
+        app:cornerRadius="6px"
+        app:icon="@drawable/ic_baseline_report_problem_24"
+        app:iconTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
