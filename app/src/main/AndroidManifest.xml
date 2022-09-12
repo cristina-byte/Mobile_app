@@ -47,7 +47,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCz5g6YKzPxFmN475aFwPVB8SZIT1XLfL4" />
+            android:value="" />
 
         <service
             android:name=".TripService"
